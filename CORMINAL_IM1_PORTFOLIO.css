@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #c4e6ec;
+}
+
+nav {
+    background: #1e5bbf;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #002d7000;
+    color: #1e5bbf;
+    text-align: center;
+    padding: 40px 20px;
+    border: 5px solid #1e5bbf;
+}
+
+.section {
+    width: 85%;
+    margin: 25px auto;
+    background: linear-gradient(90deg, #0c7ab9, #84c4e9);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.skill {
+    margin-bottom: 18px;
+}
+
+.outer {
+    width: 100%;
+    height: 12px;
+    background: #c4e6ec;
+    border-radius: 6px;
+}
+
+.inner {
+    height: 12px;
+    background: #48bcff;
+    border-radius: 6px;
+}
+
+.html { width: 40%; background-color: #f0f33d; }
+.css { width: 35%; background-color: #f0f33d; }
+.c { width: 50%; background-color: #f0f33d; }
+.python { width: 30%; background-color: #f0f33d; }
+.java { width: 5%; background-color: #b32c2c; }
+
+.hobby-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    text-align: center;
+}
+
+.hobby-img,
+.hobby-img-small {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.proj-card {
+    background: #c4e6ec;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+footer {
+    background: #1e5bbf;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+@media (max-width: 992px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .profile {
+        margin-left: 50px;
+        font-size: 35px;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 25px 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .section {
+        width: 92%;
+        padding: 15px;
+    }
+
+    .hobby-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-img,
+    .hobby-img-small {
+        width: 120px;
+        height: 120px;
+    }
+
+    .proj-card {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile {
+        font-size: 20px;
+    }
+
+    .hobby-img,
+    .hobby-img-small {
+        width: 100px;
+        height: 100px;
+    }
+}
